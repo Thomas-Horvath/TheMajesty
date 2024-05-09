@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.global-header {
+    height: 30px;
+    width: 100%;
+    background: red;
+}
+.header {
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    background: #eee;
+    top: 0;
+}
+.banner {
+    background-image: url("../assets/img/Petrucci-collection.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 500px;
+   width: 100%;
+}
