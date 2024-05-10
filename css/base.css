@@ -3,25 +3,158 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
-.global-header {
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #eee;
+}
+
+
+/* ------------ Global Header ----------------------- */
+.global-header-wrapper {
     height: 30px;
     width: 100%;
-    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
 }
+
+.global-header {
+    border-bottom: 1px solid black;
+}
+
+.global-header-right {
+    display: flex;
+    gap: 1rem;
+}
+.global-header-right a {
+    text-decoration: none;
+    color: #111;
+}
+
+
+/* --------------------- Header and Nav ----------------------------------- */
 .header {
     position: sticky;
     height: 80px;
     width: 100%;
     background: #eee;
-    top: 0;
+    top: -1px;
+    z-index: 10;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
 }
+.logo img {
+    height: 45px;
+    margin-top: 1rem;
+}
+
+.nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #111;
+}
+
+
+/*  ---------------------- Banner section -------------------------- */
 .banner {
-    background-image: url("../assets/img/Petrucci-collection.jpg");
-    background-size: contain;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.425)), url("../assets/img/Petrucci-banner.webp");
     background-repeat: no-repeat;
-    min-height: 500px;
-   width: 100%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 60vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+
+.banner h1 {
+    color: #fdfdfd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    width: 100%;
+    letter-spacing: 4px;
+}
+
+
+
+
+/*  ----------------------------- Main section ------------------------------ */
+main {
+    height: 300vh;
+}
+
+/*  --------- Welcome section -------------------- */
+#welcome {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: -6rem;
+    justify-content: space-around;
+}
+
+.welcome-card {
+    height: 20rem;
+    width: 25rem;
+    border: 10px solid white;
+    background: black;
+    z-index: 1;
+}
+
+.about {
+    background: url("../assets/img/JohnPetruciArtist.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.musicman {
+    background: url("../assets/img/welcome-musicman.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.sterling {
+    background: url("../assets/img/Welcome-sterlingwebp.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
